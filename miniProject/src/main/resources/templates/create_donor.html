@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Create Donor</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+<body>
+    <h1>Create Donor</h1>
+    <form th:action="@{/donors}" th:object="${donor}" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" th:field="*{name}" />
+        <br/>
+        <label for="bloodType">Blood Type:</label>
+        <input type="text" id="bloodType" th:field="*{bloodType}" />
+        <br/>
+        <label for="contactNumber">Contact Number:</label>
+        <input type="text" id="contactNumber" th:field="*{contactNumber}" />
+        <br/>
+        <button type="submit">Save</button>
+    </form>
+</body>
+</html>

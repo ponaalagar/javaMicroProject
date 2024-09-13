@@ -1,0 +1,11 @@
+package com.example.bloodbank.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.example.bloodbank.model.Donor;
+
+@Repository
+public interface Repository extends JpaRepository<Donor, Long> {
+	
+	
+}

@@ -1,0 +1,9 @@
+package com.miniProject.miniProject.Repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.miniProject.miniProject.Model.Modal;
+
+@Repository
+public interface Repository extends JpaRepository<Modal, Long> {
+}
